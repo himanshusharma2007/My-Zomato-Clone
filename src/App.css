@@ -13,11 +13,20 @@
 .max-width{
     width: auto;
     /* background-color: red; */
-    margin-right: 10rem;
-    margin-left:10rem ;
+    margin-right: 100px;
+    margin-left:100px ;
     padding: 1rem;
     
 }
 .slick-prev{
     z-index: 1;
 }
+.explore-card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .explore-card-wrapper > * {
+    flex: 1;
+  }
+  

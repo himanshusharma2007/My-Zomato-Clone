@@ -14,7 +14,7 @@ function ExploreCard({ restorent }) {
   const locality=restorent?.info?.locality?.name;
   const timing=restorent?.info?.timing?.text;
   return (
-    <div className="main relative cursor-pointer w-full flex flex-col justify-center h-auto hover:shadow-2xl bg-white p-3 pb-10 border-2 border-white hover:border-gray-300 rounded-2xl">
+    <div className="main relative cursor-pointer w-full flex flex-1 flex-col justify-center items-start  max-h-[500px] hover:shadow-2xl bg-white   p-2 pc-10  border-2 border-white hover:border-gray-300 rounded-2xl">
       <div className="cover relative w-full h-[280px]">
         <img src={restoImg} alt="" className="w-full h-full rounded-2xl" />
         <div className="discount">
@@ -30,7 +30,7 @@ function ExploreCard({ restorent }) {
           )}
         </div>
       </div>
-      <div className="bottom mt-3 flex flex-1 lg:flex-row flex-col justify-between">
+      <div className="bottom mt-3 flex flex-1 lg:flex-row flex-col justify-between items-start w-full">
         <div className="left w-2/3">
           <div className="name text-2xl text-gray-800">{name}
           {cuisines?.length > 0 && (
