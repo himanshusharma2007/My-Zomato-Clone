@@ -38,12 +38,12 @@ function Header() {
         </div>
         <div className="right-head flex flex-row justify-center items-center space-x-9">
           <a href="#">
-            <h1 className="text-xl ml-2 min-w-20 xl:text-3xl text-gray-400 hover:text-gray-500">
+            <h1 className="text-xl  ml-2 w-full  xl:text-3xl text-gray-400 hover:text-gray-500">
               Log in
             </h1>
           </a>
           <a href="#">
-            <h1 className="text-xl ml-2 min-w-20 xl:text-3xl text-gray-400 hover:text-gray-500">
+            <h1  className="text-xl  ml-2 w-full  xl:text-3xl text-gray-400 hover:text-gray-500">
               Sign up
             </h1>
           </a>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function TabOptions({ CurrTab, SetcurrTab }) {
-  const [selectedTab, setSelectedTab] = useState(null);
+  const [selectedTab, setSelectedTab] = useState("DiningOut");
 
   const handleClick1 = (value, name) => {
     const tabStyle = document.getElementById(`${name}`);
@@ -13,7 +13,11 @@ function TabOptions({ CurrTab, SetcurrTab }) {
     setSelectedTab(name);
     SetcurrTab(value);
   };
-
+  useEffect(() => {
+    // Apply border style to the initially selected tab
+    const defaultTabStyle = document.getElementById(selectedTab);
+    defaultTabStyle.style.borderColor = "red";
+  }, []);
   return (
     <div>
       <div className="max-width main flex flex-row space-x-20 w-full h-30 mt-0 mb-0 sticky" style={{ top: 0 }}>
