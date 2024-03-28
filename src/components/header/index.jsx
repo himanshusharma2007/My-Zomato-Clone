@@ -31,7 +31,7 @@ function Header() {
               <input
                 className="w-full z-10 border-none outline-none xl:text-2xl text-md"
                 type="text"
-                  placeholder="Search for restorents"
+                  placeholder="Search for restaurants"
               />
             </div>
           </div>
